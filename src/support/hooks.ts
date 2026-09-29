@@ -7,7 +7,7 @@ let browser: Browser;
 // Executa uma vez antes de toda a suíte de testes
 BeforeAll(async function () {
   browser = await chromium.launch({
-    headless: false, // Deixe false agora no início para ver o navegador abrindo
+    headless: process.env.CI === "true" ? true : false, // Headless no CI, headed localmente
     args: ["--start-maximized"],
   });
 });

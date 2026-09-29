@@ -1,0 +1,682 @@
+[
+  {
+    "description": "  Como um administrador do sistema\n  Quero gerenciar o cadastro de funcionários\n  Para que a base de talentos esteja sempre atualizada",
+    "elements": [
+      {
+        "description": "",
+        "id": "gestão-de-funcionários-(pim);cadastro-de-um-novo-funcionário-com-sucesso",
+        "keyword": "Cenário",
+        "line": 11,
+        "name": "Cadastro de um novo funcionário com sucesso",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 501859662
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 6714775340
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que o administrador está autenticado no sistema",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:12"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1875932904
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 9,
+            "name": "navego para o módulo \"PIM\"",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1564255932
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 12,
+            "name": "preencho os dados do novo funcionário com informações válidas",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:35"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 426110721
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 13,
+            "name": "salvo o formulário",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:53"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1445112717
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 14,
+            "name": "o sistema deve exibir uma mensagem de \"Successfully Saved\"",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:58"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3136173242
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 15,
+            "name": "o funcionário deve aparecer na lista de empregados",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:67"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 66581298
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "gestão-de-funcionários-(pim);tentativa-de-cadastro-sem-preencher-os-campos-obrigatórios",
+        "keyword": "Cenário",
+        "line": 17,
+        "name": "Tentativa de cadastro sem preencher os campos obrigatórios",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 275822834
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 9888777834
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que o administrador está autenticado no sistema",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:12"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1627070339
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 9,
+            "name": "navego para o módulo \"PIM\"",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1075844625
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 18,
+            "name": "clico no botão de adicionar funcionário",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:87"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 874478599
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 19,
+            "name": "salvo o formulário",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:53"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 926007984
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 20,
+            "name": "o sistema deve indicar nos campos de nome que os dados são obrigatórios",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:95"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 82583120
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "gestão-de-funcionários-(pim);busca-por-um-funcionário-que-não-existe",
+        "keyword": "Cenário",
+        "line": 22,
+        "name": "Busca por um funcionário que não existe",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 269034612
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 7878664466
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que o administrador está autenticado no sistema",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:12"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1976071050
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 9,
+            "name": "navego para o módulo \"PIM\"",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1637595140
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "busco na lista por um ID de funcionário inexistente \"9909987918\"",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:107"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 910285316
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 24,
+            "name": "o sistema deve exibir a mensagem \"No Records Found\"",
+            "match": {
+              "location": "src\\steps\\pimSteps.ts:118"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 54728672
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "gestão-de-funcionários-(pim)",
+    "line": 2,
+    "keyword": "Funcionalidade",
+    "name": "Gestão de Funcionários (PIM)",
+    "tags": [],
+    "uri": "src\\features\\cadastro_funcionario.feature"
+  },
+  {
+    "description": "  Como um usuário do sistema OrangeHRM\n  Quero poder acessar minha conta\n  Para gerenciar informações de recursos humanos e acessar o painel principal",
+    "elements": [
+      {
+        "description": "",
+        "id": "autenticação-no-orangehrm;login-com-credenciais-válidas-(caminho-feliz)",
+        "keyword": "Cenário",
+        "line": 10,
+        "name": "Login com credenciais válidas (Caminho Feliz)",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 228400116
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 25716334687
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que estou na página de login do OrangeHRM",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1414188046
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 11,
+            "name": "insiro o usuário \"Admin\" e a senha \"admin123\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:19"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 51555294
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "clico no botão de entrar",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:27"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2688394963
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 13,
+            "name": "devo ser redirecionado para o painel principal (Dashboard)",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:40"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 83961788
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "autenticação-no-orangehrm;tentativas-de-login-com-credenciais-inválidas",
+        "keyword": "Esquema do Cenário",
+        "line": 22,
+        "name": "Tentativas de login com credenciais inválidas",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 252979009
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 5290219916
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que estou na página de login do OrangeHRM",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 906505714
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 16,
+            "name": "insiro o usuário \"Admin\" e a senha \"senha_errada\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:19"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 47591384
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 17,
+            "name": "clico no botão de entrar",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:27"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1482449166
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 18,
+            "name": "o sistema deve exibir a mensagem de erro \"Invalid credentials\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:50"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 50564807
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "autenticação-no-orangehrm;tentativas-de-login-com-credenciais-inválidas",
+        "keyword": "Esquema do Cenário",
+        "line": 23,
+        "name": "Tentativas de login com credenciais inválidas",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 234312252
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 6183647362
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que estou na página de login do OrangeHRM",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 886428023
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 16,
+            "name": "insiro o usuário \"errado\" e a senha \"admin123\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:19"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 49429606
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 17,
+            "name": "clico no botão de entrar",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:27"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1264412028
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 18,
+            "name": "o sistema deve exibir a mensagem de erro \"Invalid credentials\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:50"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 55819874
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "autenticação-no-orangehrm;tentativas-de-login-com-credenciais-inválidas",
+        "keyword": "Esquema do Cenário",
+        "line": 24,
+        "name": "Tentativas de login com credenciais inválidas",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 230997583
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 6781499393
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que estou na página de login do OrangeHRM",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 897484247
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 16,
+            "name": "insiro o usuário \"errado\" e a senha \"senha_errada\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:19"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 56375740
+            },
+            "arguments": [],
+            "keyword": "E ",
+            "line": 17,
+            "name": "clico no botão de entrar",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:27"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1377324352
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 18,
+            "name": "o sistema deve exibir a mensagem de erro \"Invalid credentials\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:50"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 59345251
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "autenticação-no-orangehrm;tentativa-de-login-com-campos-em-branco",
+        "keyword": "Cenário",
+        "line": 26,
+        "name": "Tentativa de login com campos em branco",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 259600521
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 5513813278
+            },
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que estou na página de login do OrangeHRM",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 907615982
+            },
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 27,
+            "name": "clico no botão de entrar sem preencher os dados",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 19186935
+            },
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 28,
+            "name": "o sistema deve indicar que os campos são obrigatórios",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:61"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 60331340
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "autenticação-no-orangehrm",
+    "line": 2,
+    "keyword": "Funcionalidade",
+    "name": "Autenticação no OrangeHRM",
+    "tags": [],
+    "uri": "src\\features\\login.feature"
+  }
+]
