@@ -5,8 +5,9 @@ import {
   setDefaultTimeout,
 } from "@cucumber/cucumber";
 import { Browser, BrowserContext, Page } from "@playwright/test";
+import { TIMEOUTS } from "../config/timeouts";
 
-setDefaultTimeout(30 * 1000);
+setDefaultTimeout(TIMEOUTS.DEFAULT);
 
 export class CustomWorld extends World {
   browser?: Browser;
@@ -14,6 +15,8 @@ export class CustomWorld extends World {
   page?: Page;
   // Armazena os dados gerados pelo Faker no contexto do cenário
   funcionarioFake = { nome: "", sobrenome: "", id: "" };
+  // Nome do cenário atual para logging e screenshots
+  scenarioName?: string;
 
   constructor(options: IWorldOptions) {
     super(options);

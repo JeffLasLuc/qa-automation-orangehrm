@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
-    "test:failed": "cucumber-js --retry 2"
+    "test:headed": "cucumber-js",
+    "test:debug": "DEBUG=true cucumber-js",
+    "test:failed": "cucumber-js --retry 2",
+    "test:parallel": "cucumber-js --parallel 2"
   },
   "keywords": [],
   "type": "commonjs",

@@ -40,7 +40,8 @@ export class PimPage {
       .locator("..")
       .locator("input");
     this.botaoSearch = page.getByRole("button", { name: "Search" });
-    this.celulaGridId = page.locator(".oxd-table-cell").nth(1);
+    // Locator mais específico para a célula de ID na tabela - busca dentro do grid de resultados
+    this.celulaGridId = page.locator(".oxd-table-body .oxd-table-cell").nth(1);
 
     // Mapeamento dos novos elementos
     this.mensagensObrigatorias = page.locator(".oxd-input-group__message");

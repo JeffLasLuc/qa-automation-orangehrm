@@ -12,7 +12,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 501859662
+              "duration": 424730099
             },
             "keyword": "Before",
             "hidden": true
@@ -20,85 +20,85 @@
           {
             "result": {
               "status": "passed",
-              "duration": 6714775340
+              "duration": 7624222700
             },
             "arguments": [],
             "keyword": "Dado ",
             "line": 8,
             "name": "que o administrador está autenticado no sistema",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:12"
+              "location": "src\\steps\\pimSteps.ts:21"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 1875932904
+              "duration": 1989801497
             },
             "arguments": [],
             "keyword": "E ",
             "line": 9,
             "name": "navego para o módulo \"PIM\"",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:25"
+              "location": "src\\steps\\pimSteps.ts:38"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 1564255932
+              "duration": 1820670364
             },
             "arguments": [],
             "keyword": "Quando ",
             "line": 12,
             "name": "preencho os dados do novo funcionário com informações válidas",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:35"
+              "location": "src\\steps\\pimSteps.ts:50"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 426110721
+              "duration": 305993638
             },
             "arguments": [],
             "keyword": "E ",
             "line": 13,
             "name": "salvo o formulário",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:53"
+              "location": "src\\steps\\pimSteps.ts:72"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 1445112717
+              "duration": 1471950275
             },
             "arguments": [],
             "keyword": "Então ",
             "line": 14,
             "name": "o sistema deve exibir uma mensagem de \"Successfully Saved\"",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:58"
+              "location": "src\\steps\\pimSteps.ts:79"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 3136173242
+              "duration": 1900014597
             },
             "arguments": [],
             "keyword": "E ",
             "line": 15,
             "name": "o funcionário deve aparecer na lista de empregados",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:67"
+              "location": "src\\steps\\pimSteps.ts:90"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 66581298
+              "duration": 105707569
             },
             "keyword": "After",
             "hidden": true
@@ -117,7 +117,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 275822834
+              "duration": 321135018
             },
             "keyword": "Before",
             "hidden": true
@@ -125,72 +125,72 @@
           {
             "result": {
               "status": "passed",
-              "duration": 9888777834
+              "duration": 7785849877
             },
             "arguments": [],
             "keyword": "Dado ",
             "line": 8,
             "name": "que o administrador está autenticado no sistema",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:12"
+              "location": "src\\steps\\pimSteps.ts:21"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 1627070339
+              "duration": 2031730568
             },
             "arguments": [],
             "keyword": "E ",
             "line": 9,
             "name": "navego para o módulo \"PIM\"",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:25"
+              "location": "src\\steps\\pimSteps.ts:38"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 1075844625
+              "duration": 1342856704
             },
             "arguments": [],
             "keyword": "Quando ",
             "line": 18,
             "name": "clico no botão de adicionar funcionário",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:87"
+              "location": "src\\steps\\pimSteps.ts:115"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 874478599
+              "duration": 876920599
             },
             "arguments": [],
             "keyword": "E ",
             "line": 19,
             "name": "salvo o formulário",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:53"
+              "location": "src\\steps\\pimSteps.ts:72"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 926007984
+              "duration": 944631718
             },
             "arguments": [],
             "keyword": "Então ",
             "line": 20,
             "name": "o sistema deve indicar nos campos de nome que os dados são obrigatórios",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:95"
+              "location": "src\\steps\\pimSteps.ts:125"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 82583120
+              "duration": 77135431
             },
             "keyword": "After",
             "hidden": true
@@ -209,7 +209,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 269034612
+              "duration": 398891827
             },
             "keyword": "Before",
             "hidden": true
@@ -217,59 +217,59 @@
           {
             "result": {
               "status": "passed",
-              "duration": 7878664466
+              "duration": 33540882570
             },
             "arguments": [],
             "keyword": "Dado ",
             "line": 8,
             "name": "que o administrador está autenticado no sistema",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:12"
+              "location": "src\\steps\\pimSteps.ts:21"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 1976071050
+              "duration": 1962316160
             },
             "arguments": [],
             "keyword": "E ",
             "line": 9,
             "name": "navego para o módulo \"PIM\"",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:25"
+              "location": "src\\steps\\pimSteps.ts:38"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 1637595140
+              "duration": 1597184070
             },
             "arguments": [],
             "keyword": "Quando ",
             "line": 23,
             "name": "busco na lista por um ID de funcionário inexistente \"9909987918\"",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:107"
+              "location": "src\\steps\\pimSteps.ts:142"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 910285316
+              "duration": 1106605517
             },
             "arguments": [],
             "keyword": "Então ",
             "line": 24,
             "name": "o sistema deve exibir a mensagem \"No Records Found\"",
             "match": {
-              "location": "src\\steps\\pimSteps.ts:118"
+              "location": "src\\steps\\pimSteps.ts:159"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 54728672
+              "duration": 69726320
             },
             "keyword": "After",
             "hidden": true
@@ -299,7 +299,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 228400116
+              "duration": 337688308
             },
             "keyword": "Before",
             "hidden": true
@@ -307,7 +307,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 25716334687
+              "duration": 6012986496
             },
             "arguments": [],
             "keyword": "Dado ",
@@ -320,7 +320,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1414188046
+              "duration": 914671138
             },
             "arguments": [],
             "keyword": "Quando ",
@@ -333,7 +333,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 51555294
+              "duration": 48558895
             },
             "arguments": [],
             "keyword": "E ",
@@ -346,7 +346,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2688394963
+              "duration": 1699821415
             },
             "arguments": [],
             "keyword": "Então ",
@@ -359,7 +359,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 83961788
+              "duration": 167908421
             },
             "keyword": "After",
             "hidden": true
@@ -378,7 +378,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 252979009
+              "duration": 303662615
             },
             "keyword": "Before",
             "hidden": true
@@ -386,7 +386,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 5290219916
+              "duration": 5903797060
             },
             "arguments": [],
             "keyword": "Dado ",
@@ -399,7 +399,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 906505714
+              "duration": 913444516
             },
             "arguments": [],
             "keyword": "Quando ",
@@ -412,7 +412,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 47591384
+              "duration": 47107873
             },
             "arguments": [],
             "keyword": "E ",
@@ -425,7 +425,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1482449166
+              "duration": 1495463390
             },
             "arguments": [],
             "keyword": "Então ",
@@ -438,7 +438,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 50564807
+              "duration": 68904985
             },
             "keyword": "After",
             "hidden": true
@@ -457,7 +457,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 234312252
+              "duration": 334451376
             },
             "keyword": "Before",
             "hidden": true
@@ -465,7 +465,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 6183647362
+              "duration": 5816033672
             },
             "arguments": [],
             "keyword": "Dado ",
@@ -478,7 +478,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 886428023
+              "duration": 910041360
             },
             "arguments": [],
             "keyword": "Quando ",
@@ -491,7 +491,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 49429606
+              "duration": 49128939
             },
             "arguments": [],
             "keyword": "E ",
@@ -504,7 +504,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1264412028
+              "duration": 1435173603
             },
             "arguments": [],
             "keyword": "Então ",
@@ -517,7 +517,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 55819874
+              "duration": 69945342
             },
             "keyword": "After",
             "hidden": true
@@ -536,7 +536,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 230997583
+              "duration": 330537330
             },
             "keyword": "Before",
             "hidden": true
@@ -544,7 +544,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 6781499393
+              "duration": 6299076488
             },
             "arguments": [],
             "keyword": "Dado ",
@@ -557,7 +557,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 897484247
+              "duration": 897759981
             },
             "arguments": [],
             "keyword": "Quando ",
@@ -570,7 +570,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 56375740
+              "duration": 58828985
             },
             "arguments": [],
             "keyword": "E ",
@@ -583,7 +583,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1377324352
+              "duration": 2522596587
             },
             "arguments": [],
             "keyword": "Então ",
@@ -596,7 +596,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 59345251
+              "duration": 67805475
             },
             "keyword": "After",
             "hidden": true
@@ -615,7 +615,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 259600521
+              "duration": 340259865
             },
             "keyword": "Before",
             "hidden": true
@@ -623,7 +623,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 5513813278
+              "duration": 2785985998
             },
             "arguments": [],
             "keyword": "Dado ",
@@ -636,7 +636,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 907615982
+              "duration": 503734553
             },
             "arguments": [],
             "keyword": "Quando ",
@@ -649,7 +649,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 19186935
+              "duration": 21690047
             },
             "arguments": [],
             "keyword": "Então ",
@@ -662,7 +662,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 60331340
+              "duration": 67952631
             },
             "keyword": "After",
             "hidden": true
