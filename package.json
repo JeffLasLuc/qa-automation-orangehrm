@@ -1,0 +1,20 @@
+{
+  "name": "qa-automation-orangehrm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:failed": "cucumber-js --retry 2"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

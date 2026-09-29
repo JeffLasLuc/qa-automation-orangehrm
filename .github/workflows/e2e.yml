@@ -1,0 +1,37 @@
+name: Automação E2E - OrangeHRM
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v4
+      
+    - name: Configurar Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        
+    - name: Instalar dependências
+      run: npm ci
+      
+    - name: Instalar Navegadores do Playwright (com dependências do Linux)
+      run: npx playwright install --with-deps chromium
+      
+    - name: Executar testes (Cucumber)
+      run: npm test
+      
+    - name: Salvar Relatório de Evidências
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: cucumber-reports
+        path: reports/
+        retention-days: 7
