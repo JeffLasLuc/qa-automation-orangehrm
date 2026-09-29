@@ -18,6 +18,17 @@ export async function waitForVisible(
 }
 
 /**
+ * Espera elemento estar presente no DOM (attached) - útil para elementos que podem estar ocultos
+ */
+export async function waitForAttached(
+  locator: Locator,
+  timeout: number = TIMEOUTS.ELEMENT_VISIBLE
+): Promise<void> {
+  await locator.waitFor({ state: "attached", timeout });
+  logger.debug(`Elemento anexado ao DOM: ${locator}`);
+}
+
+/**
  * Espera elemento ficar oculto
  */
 export async function waitForHidden(
@@ -26,17 +37,6 @@ export async function waitForHidden(
 ): Promise<void> {
   await locator.waitFor({ state: "hidden", timeout });
   logger.debug(`Elemento oculto: ${locator}`);
-}
-
-/**
- * Espera elemento ficar anexado ao DOM
- */
-export async function waitForAttached(
-  locator: Locator,
-  timeout: number = TIMEOUTS.ELEMENT_VISIBLE
-): Promise<void> {
-  await locator.waitFor({ state: "attached", timeout });
-  logger.debug(`Elemento anexado: ${locator}`);
 }
 
 /**

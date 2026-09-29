@@ -11,6 +11,7 @@ export class PimPage {
   readonly toastSuccess: Locator;
   readonly abaEmployeeList: Locator;
   readonly inputBuscaId: Locator;
+  readonly inputBuscaIdFallback: Locator;
   readonly botaoSearch: Locator;
   readonly celulaGridId: Locator;
 
@@ -33,7 +34,11 @@ export class PimPage {
     this.botaoSave = page.getByRole("button", { name: "Save" });
     this.toastSuccess = page.getByText("Successfully Saved");
     this.abaEmployeeList = page.getByRole("link", { name: "Employee List" });
-    this.inputBuscaId = page
+    // Locator específico para o campo de busca na lista de funcionários
+    // Usa uma estratégia mais robusta baseada na estrutura do formulário de busca
+    this.inputBuscaId = page.locator(".oxd-input").first();
+    // Fallback: locator alternativo usando o label
+    this.inputBuscaIdFallback = page
       .locator("label")
       .filter({ hasText: "Employee Id" })
       .locator("..")

@@ -13,6 +13,7 @@ import {
   assertVisible,
   assertContainsText,
   waitForVisible,
+  waitForAttached,
   clickWithRetry,
   fillWithRetry,
 } from "../utils/assertions";
@@ -97,11 +98,12 @@ Então(
     // O OrangeHRM redireciona para o perfil após salvar, precisamos voltar para a lista
     await clickWithRetry(pimPage.abaEmployeeList);
 
-    // Aguarda a lista carregar completamente
-    await waitForVisible(pimPage.inputBuscaId, TIMEOUTS.ELEMENT_VISIBLE);
+    // Aguarda a lista carregar completamente - usa attached pois elemento pode estar oculto no CI
+    await waitForAttached(pimPage.inputBuscaIdFallback, TIMEOUTS.ELEMENT_VISIBLE);
 
-    // Busca pelo ID gerado pelo Faker
-    await fillWithRetry(pimPage.inputBuscaId, this.funcionarioFake.id);
+    // Busca pelo ID gerado pelo Faker - usa fallback que é mais robusto
+    await fillWithRetry(pimPage.inputBuscaIdFallback, this.funcionarioFake.id);
+
     await clickWithRetry(pimPage.botaoSearch);
 
     // Aguarda o grid atualizar - espera pelo elemento aparecer na tabela
@@ -148,10 +150,12 @@ Quando(
     // Garante que estamos na aba de lista
     await clickWithRetry(pimPage.abaEmployeeList);
 
-    // Aguarda o campo de busca estar disponível
-    await waitForVisible(pimPage.inputBuscaId, TIMEOUTS.ELEMENT_VISIBLE);
+    // Aguarda o campo de busca estar disponível - usa attached pois elemento pode estar oculto no CI
+    await waitForAttached(pimPage.inputBuscaIdFallback, TIMEOUTS.ELEMENT_VISIBLE);
 
-    await fillWithRetry(pimPage.inputBuscaId, idInexistente);
+    // Usa fallback locator que é mais robusto
+    await fillWithRetry(pimPage.inputBuscaIdFallback, idInexistente);
+
     await clickWithRetry(pimPage.botaoSearch);
   },
 );
